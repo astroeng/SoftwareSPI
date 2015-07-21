@@ -6,12 +6,12 @@ There are several different software SPI libraries out there. This one is my tak
 Use
 ---
 
-`#define SPI_DATA_IN 7
-#define SPI_DATA_OUT 8
-#define SPI_CLOCK    9
-#define BIT_ORDER    MSB_FIRST  // or LSB_FIRST
-#define CLOCK_DELAY  500        // in microSeconds
-Software_SPI spi_bus(SPI_DATA_IN, SPI_DATA_OUT, SPI_CLOCK, BIT_ORDER, CLOCK_DELAY);`
+`#define SPI_DATA_IN 7`
+`#define SPI_DATA_OUT 8`
+`#define SPI_CLOCK    9`
+`#define BIT_ORDER    MSB_FIRST  // or LSB_FIRST`
+`#define CLOCK_DELAY  500        // in microSeconds`
+`Software_SPI spi_bus(SPI_DATA_IN, SPI_DATA_OUT, SPI_CLOCK, BIT_ORDER, CLOCK_DELAY);`
 
 `int data_out = 0x11;
 int data_in = SPI_Send_Receive(data_out);`
